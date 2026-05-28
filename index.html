@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Codex Pyrimid Buyer-Agent Recommender</title>
+    <meta
+      name="description"
+      content="A no-custody Pyrimid SDK integration that recommends x402 products for buyer agents."
+    />
+    <link rel="icon" href="data:," />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <main class="shell">
+      <section class="intro" aria-labelledby="page-title">
+        <p class="kicker">Pyrimid SDK integration proof</p>
+        <h1 id="page-title">Codex buyer-agent recommender</h1>
+        <p class="lede">
+          A live, no-spend discovery agent for matching buyer intent to Pyrimid
+          catalog products. It imports the official resolver in-browser and
+          never requests keys, seed phrases, or payment credentials.
+        </p>
+      </section>
+
+      <section class="panel" aria-labelledby="controls-title">
+        <div class="panel-header">
+          <div>
+            <h2 id="controls-title">Recommendation query</h2>
+            <p>Change the buyer need and rerun the SDK lookup.</p>
+          </div>
+          <span class="badge" id="status-badge">Loading SDK</span>
+        </div>
+
+        <form id="query-form" class="query-form">
+          <label for="need">Buyer need</label>
+          <div class="input-row">
+            <input
+              id="need"
+              name="need"
+              type="text"
+              value="paid mcp tool monetization x402 agent discovery"
+              autocomplete="off"
+            />
+            <button type="submit">Run lookup</button>
+          </div>
+        </form>
+
+        <dl class="metadata">
+          <div>
+            <dt>Affiliate ID</dt>
+            <dd id="affiliate-id">yunrongy424-codex-agent</dd>
+          </div>
+          <div>
+            <dt>Base USDC payout wallet</dt>
+            <dd id="wallet">0xb31DdEAcB7970688A9a958D3A3Cefc664CF2b72A</dd>
+          </div>
+          <div>
+            <dt>Catalog source</dt>
+            <dd>https://pyrimid.ai/api/v1/catalog</dd>
+          </div>
+        </dl>
+      </section>
+
+      <section class="results" aria-labelledby="results-title">
+        <div class="results-heading">
+          <h2 id="results-title">Live recommendations</h2>
+          <p id="result-summary">Waiting for the catalog response.</p>
+        </div>
+        <div id="product-grid" class="product-grid" aria-live="polite"></div>
+      </section>
+
+      <section class="panel compact" aria-labelledby="proof-title">
+        <h2 id="proof-title">Safety and custody</h2>
+        <ul class="checklist">
+          <li>Discovery only: the page does not buy products or sign payments.</li>
+          <li>Buyer agents keep custody and decide whether to pay later.</li>
+          <li>No private keys, seed phrases, OAuth tokens, or credentials are requested.</li>
+          <li>The recommended purchase header is `X-Affiliate-ID: yunrongy424-codex-agent`.</li>
+        </ul>
+      </section>
+    </main>
+
+    <script type="module" src="./app.js"></script>
+  </body>
+</html>

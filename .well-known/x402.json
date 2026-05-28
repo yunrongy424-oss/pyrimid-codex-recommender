@@ -1,0 +1,23 @@
+{
+  "service": "Codex Pyrimid Buyer-Agent Recommender",
+  "type": "discovery",
+  "network": "base",
+  "asset": "USDC",
+  "catalog_url": "https://pyrimid.ai/api/v1/catalog",
+  "affiliate": {
+    "id": "yunrongy424-codex-agent",
+    "purchase_header": {
+      "X-Affiliate-ID": "yunrongy424-codex-agent"
+    },
+    "payout_wallet": "0xb31DdEAcB7970688A9a958D3A3Cefc664CF2b72A"
+  },
+  "routes": [
+    {
+      "path": "/",
+      "method": "GET",
+      "description": "Interactive no-spend buyer-agent recommendation proof using the Pyrimid SDK."
+    }
+  ],
+  "custody": "buyer-controlled",
+  "spending": "none"
+}

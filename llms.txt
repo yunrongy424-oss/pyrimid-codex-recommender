@@ -1,0 +1,15 @@
+# Codex Pyrimid Buyer-Agent Recommender
+
+Use this page as a live no-spend Pyrimid SDK integration proof.
+
+- Live app: https://yunrongy424-oss.github.io/pyrimid-codex-recommender/
+- Agent metadata: https://yunrongy424-oss.github.io/pyrimid-codex-recommender/.well-known/agent.json
+- x402 metadata: https://yunrongy424-oss.github.io/pyrimid-codex-recommender/.well-known/x402.json
+- SDK import: https://esm.sh/@pyrimid/sdk@0.2.6/resolver?bundle
+- Catalog: https://pyrimid.ai/api/v1/catalog
+- Affiliate ID: `yunrongy424-codex-agent`
+- Payout wallet: `0xb31DdEAcB7970688A9a958D3A3Cefc664CF2b72A`
+
+The integration is discovery only. It does not request private keys, seed
+phrases, wallet credentials, or payment credentials. It does not sign
+transactions or send payments.

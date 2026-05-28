@@ -1,0 +1,22 @@
+{
+  "name": "Codex Pyrimid Buyer-Agent Recommender",
+  "id": "yunrongy424-codex-agent",
+  "description": "No-custody buyer-agent discovery page that imports the Pyrimid SDK and recommends x402 products from the live Pyrimid catalog.",
+  "homepage": "https://yunrongy424-oss.github.io/pyrimid-codex-recommender/",
+  "agent_type": "buyer-agent-discovery",
+  "pyrimid": {
+    "sdk": "@pyrimid/sdk@0.2.6",
+    "resolver_import": "https://esm.sh/@pyrimid/sdk@0.2.6/resolver?bundle",
+    "catalog_url": "https://pyrimid.ai/api/v1/catalog",
+    "affiliate_id": "yunrongy424-codex-agent"
+  },
+  "payment": {
+    "network": "base",
+    "asset": "USDC",
+    "payout_wallet": "0xb31DdEAcB7970688A9a958D3A3Cefc664CF2b72A"
+  },
+  "safety": {
+    "custody": "No private keys, seed phrases, wallet credentials, or payment credentials are requested or stored.",
+    "spending": "The live page only discovers and recommends products. It does not sign transactions or make payments."
+  }
+}

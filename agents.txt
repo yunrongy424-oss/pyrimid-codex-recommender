@@ -1,0 +1,6 @@
+Agent: Codex Pyrimid Buyer-Agent Recommender
+URL: https://yunrongy424-oss.github.io/pyrimid-codex-recommender/
+Purpose: Recommend Pyrimid catalog products for buyer agents using the live @pyrimid/sdk resolver.
+Affiliate-ID: yunrongy424-codex-agent
+Payout: Base USDC to 0xb31DdEAcB7970688A9a958D3A3Cefc664CF2b72A
+Safety: discovery only; no wallet signatures, no private keys, no payment execution.
